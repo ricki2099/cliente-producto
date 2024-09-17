@@ -1,1 +1,54 @@
-<p>listar-productos works!</p>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2">
+      <div class="card">
+        <div class="card-header text-center">
+          <span class="titulo"> Lista de Productos </span>
+          <button
+            class="btn btn-success float-end"
+            routerLink="/crear-producto"
+          >
+            Nuevo producto
+          </button>
+        </div>
+        <div class="card-body">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">ubicación</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (producto of listProductos; track producto._id) {
+              <tr>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.categoria }}</td>
+                <td>{{ producto.ubicacion }}</td>
+                <td>{{ producto.precio | currency : "COP" }}</td>
+                <td>
+                  <i
+                    [routerLink]="['./editar-producto', producto._id]"
+                    class="fa-solid fa-pencil text-primary"
+                  ></i>
+                  <i
+                    (click)="borrar(producto._id)"
+                    class="fa-solid fa-trash text-danger"
+                  ></i>
+                </td>
+              </tr>
+              }@empty {
+              <tr>
+                <td colspan="5">No hay registros</td>
+              </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

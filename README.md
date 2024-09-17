@@ -1,27 +1,57 @@
-# Cliente
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+markdown
+CopyInsert
+# Nombre del Proyecto
 
-## Development server
+## Descripción
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este proyecto es un formulario de creación de productos que utiliza Angular como framework frontend. El formulario incluye campos para ingresar el nombre del producto y otros detalles.
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Formulario de creación de productos con validación de campos
+* Utiliza Angular como framework frontend
+* Incluye campos para ingresar el nombre del producto y otros detalles
 
-## Build
+## Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Node.js 14 o superior
+* Angular CLI 11 o superior
+* Navegador web compatible con HTML5 y CSS3
 
-## Running unit tests
+## Instalación
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clona el repositorio utilizando `git clone https://github.com/ricki2099/cliente-producto.git`
+2. Instala las dependencias utilizando `npm install`
+3. Ejecuta el proyecto utilizando `ng serve`
 
-## Running end-to-end tests
+## Estructura del Proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* `app/`: Carpeta principal del proyecto
+	+ `app.component.html`: Plantilla principal del componente
+	+ `app.component.ts`: Archivo TypeScript del componente
+	+ `app.module.ts`: Archivo de configuración del módulo
+* `components/`: Carpeta de componentes
+	+ `producto-form/`: Carpeta del componente de formulario de producto
+		- `producto-form.component.html`: Plantilla del componente de formulario de producto
+		- `producto-form.component.ts`: Archivo TypeScript del componente de formulario de producto
+* `services/`: Carpeta de servicios
+	+ `producto.service.ts`: Archivo TypeScript del servicio de producto
+* `models/`: Carpeta de modelos
+	+ `product.ts`: Archivo TypeScript del modelo del producto
 
-## Further help
+## Contribuciones
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Si deseas contribuir al proyecto, por favor sigue los siguientes pasos:
+
+1. Crea un fork del repositorio
+2. Realiza los cambios deseados
+3. Crea un pull request para solicitar la revisión de tus cambios
+
+## Contacto
+
+Para más información, visita mi perfil de LinkedIn: [Richard](https://www.linkedin.com/in/ricardo-rodriguez-bareño/)
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT.

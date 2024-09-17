@@ -6,9 +6,9 @@ import { ListarProductosComponent } from './components/listar-productos/listar-p
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CrearProductoComponent,ListarProductosComponent],
+  imports: [RouterOutlet, CrearProductoComponent, ListarProductosComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'cliente';
