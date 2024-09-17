@@ -1,7 +1,7 @@
 
 markdown
 CopyInsert
-# Nombre del Proyecto
+# Tipos de productos
 
 ## Descripción
 
