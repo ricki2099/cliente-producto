@@ -13,7 +13,6 @@ export class ProductoService {
     return this.http.get(this.url);
   }
   getProductById(id: string): Observable<any> {
-    console.log(this.url + id);
     return this.http.get(this.url + id);
   }
 
